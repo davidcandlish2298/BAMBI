@@ -1,0 +1,70 @@
+{
+  "cities": [
+    {"city_id": 1, "city_name": "London"},
+    {"city_id": 2, "city_name": "Newcastle"},
+    {"city_id": 3, "city_name": "Paris"},
+    {"city_id": 4, "city_name": "Cape Town"},
+    {"city_id": 5, "city_name": "New York"},
+    {"city_id": 6, "city_name": "Singapore"}
+  ],
+  "airports": [
+    {"airport_id":  1, "airport_name":  "Heathrow", "airport_code": "LHR"},
+    {"airport_id":  2, "airport_name":  "Gatwick", "airport_code":  "LGW"},
+    {"airport_id":  3, "airport_name":  "Newcastle City", "airport_code":  "NCL"},
+    {"airport_id":  4, "airport_name":  "Charles de Gall", "airport_code":  "CDG"},
+    {"airport_id":  5, "airport_name":  "Cape Town City Airport", "airport_code": "CTC"},
+    {"airport_id":  6, "airport_name":  "La Guardia", "airport_code":  "LGA"},
+    {"airport_id":  7, "airport_name":  "John F Kennedy International Airport", "airport_code":  "JFK"},
+    {"airport_id":  8, "airport_name":  "Changi", "airport_code":  "SIN"}
+  ],
+  "cityairports": [
+    {"cityairport_id":  1, "city_id":  1, "airport_id": 1},
+    {"cityairport_id":  2, "city_id":  1, "airport_id": 2},
+    {"cityairport_id":  3, "city_id":  2, "airport_id": 3},
+    {"cityairport_id":  4, "city_id":  3, "airport_id": 4},
+    {"cityairport_id":  5, "city_id":  4, "airport_id": 5},
+    {"cityairport_id":  6, "city_id":  5, "airport_id": 6},
+    {"cityairport_id":  7, "city_id":  5, "airport_id": 7},
+    {"cityairport_id":  8, "city_id":  6, "airport_id": 8}
+  ],
+  "aircraft": [
+    {"aircraft_id":  1, "aircraft_name": "Pride of London", "aircraftmodel_id":  1},
+    {"aircraft_id":  2, "aircraft_name": "Pride of Bristol", "aircraftmodel_id":  1},
+    {"aircraft_id":  3, "aircraft_name": "Pride of Croydon", "aircraftmodel_id":  2},
+    {"aircraft_id":  4, "aircraft_name": "Pride of Brighton", "aircraftmodel_id":  2},
+    {"aircraft_id":  5, "aircraft_name": "Pride of Manchester", "aircraftmodel_id":  3},
+    {"aircraft_id":  6, "aircraft_name": "Pride of Edinburgh", "aircraftmodel_id":  3},
+    {"aircraft_id":  7, "aircraft_name": "Pride of Bath", "aircraftmodel_id":  4}
+  ],
+  "aircraftmodels": [
+    {"aircraftmodel_id": 1, "aircraftmodel_name":  "Airbus 1000", "aircraftmodel_range":  1000, "aircraftmodel_speed": 500},
+    {"aircraftmodel_id": 2, "aircraftmodel_name":  "Airbus 500", "aircraftmodel_range":  500, "aircraftmodel_speed": 350},
+    {"aircraftmodel_id": 3, "aircraftmodel_name":  "Boeing 848", "aircraftmodel_range":  20000, "aircraftmodel_speed": 600},
+    {"aircraftmodel_id": 4, "aircraftmodel_name":  "Concorde", "aircraftmodel_range":  9000, "aircraftmodel_speed": 2000}
+  ],
+  "pilots": [
+    {"pilot_id" : 1, "pilot_name": "Amelia Earache" },
+    {"pilot_id" : 2, "pilot_name": "Charlie Windbergh" },
+    {"pilot_id" : 3, "pilot_name": "Chuck Yeagerbomb" },
+    {"pilot_id" : 4, "pilot_name": "Orville Wronge" },
+    {"pilot_id" : 6, "pilot_name": "Wilbur Wronge" },
+    {"pilot_id" : 7, "pilot_name": "Felicity Flap" },
+    {"pilot_id" : 8, "pilot_name": "Stephen Soar" },
+    {"pilot_id" : 9, "pilot_name": "Gertrude Glide" }
+  ],
+  "schedules": [
+    {"schedule_id":  1, "departure_time": "04:00"},
+    {"schedule_id":  2, "departure_time": "06:00"},
+    {"schedule_id":  3, "departure_time": "08:00"},
+    {"schedule_id":  4, "departure_time": "10:00"},
+    {"schedule_id":  5, "departure_time": "12:00"},
+    {"schedule_id":  6, "departure_time": "14:00"}
+  ],
+  "routes": [
+    {"route_id":  1, "origin_cityairport_id":  1, "destination_cityairport_id": 3, "route_distance": 450 },
+    {"route_id":  2, "origin_cityairport_id":  2, "destination_cityairport_id": 3, "route_distance": 475 }
+  ],
+  "flights": [
+    {"flight_id":  1, "flight_number": "DC123", "pilot_id":  1, "route_id": 1, "aircraft_id":  1, "schedule_id": 1, "flight_time":  2, "arrival_time":  "16:00"}
+  ]
+}
