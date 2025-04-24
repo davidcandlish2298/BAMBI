@@ -50,7 +50,7 @@ def start_journey():
         print("Flask installation detected, but web mode disabled")
 
         print("Choose an option:")
-        print("1. Run in CLI mode")
+        print("1. Run in CLI mode - please maximise your window for best results")
         #print("2. Run in Web mode")
 
         user_choice = input("Select mode (1 or 2)\n")
