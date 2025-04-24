@@ -31,7 +31,7 @@
     {"aircraft_id":  1, "aircraft_name": "Pride of London", "aircraftmodel_id":  1},
     {"aircraft_id":  2, "aircraft_name": "Pride of Bristol", "aircraftmodel_id":  1},
     {"aircraft_id":  3, "aircraft_name": "Pride of Croydon", "aircraftmodel_id":  2},
-    {"aircraft_id":  4, "aircraft_name": "Pride of Brighton", "aircraftmodel_id":  2},
+    {"aircraft_id":  4, "aircraft_name": "Pride of Brighton", "aircraftmodel_id":  3},
     {"aircraft_id":  5, "aircraft_name": "Pride of Manchester", "aircraftmodel_id":  3},
     {"aircraft_id":  6, "aircraft_name": "Pride of Edinburgh", "aircraftmodel_id":  3},
     {"aircraft_id":  7, "aircraft_name": "Pride of Bath", "aircraftmodel_id":  4}
@@ -53,18 +53,38 @@
     {"pilot_id" : 9, "pilot_name": "Gertrude Glide" }
   ],
   "schedules": [
-    {"schedule_id":  1, "departure_time": "04:00"},
-    {"schedule_id":  2, "departure_time": "06:00"},
-    {"schedule_id":  3, "departure_time": "08:00"},
-    {"schedule_id":  4, "departure_time": "10:00"},
-    {"schedule_id":  5, "departure_time": "12:00"},
-    {"schedule_id":  6, "departure_time": "14:00"}
+    {"schedule_id":  1, "departure_time": "01:00"},
+    {"schedule_id":  2, "departure_time": "02:00"},
+    {"schedule_id":  3, "departure_time": "03:00"},
+    {"schedule_id":  4, "departure_time": "05:00"},
+    {"schedule_id":  5, "departure_time": "05:00"},
+    {"schedule_id":  6, "departure_time": "06:00"},
+    {"schedule_id":  7, "departure_time": "07:00"},
+    {"schedule_id":  8, "departure_time": "08:00"},
+    {"schedule_id":  9, "departure_time": "09:00"},
+    {"schedule_id":  10, "departure_time": "10:00"},
+    {"schedule_id":  11, "departure_time": "11:00"},
+    {"schedule_id":  12, "departure_time": "12:00"},
+    {"schedule_id":  13, "departure_time": "13:00"},
+    {"schedule_id":  14, "departure_time": "14:00"},
+    {"schedule_id":  15, "departure_time": "15:00"},
+    {"schedule_id":  16, "departure_time": "16:00"},
+    {"schedule_id":  17, "departure_time": "17:00"},
+    {"schedule_id":  18, "departure_time": "18:00"},
+    {"schedule_id":  19, "departure_time": "19:00"},
+    {"schedule_id":  20, "departure_time": "20:00"},
+    {"schedule_id":  21, "departure_time": "21:00"},
+    {"schedule_id":  22, "departure_time": "22:00"},
+    {"schedule_id":  23, "departure_time": "23:00"},
+    {"schedule_id":  24, "departure_time": "00:00"}
   ],
   "routes": [
-    {"route_id":  1, "origin_cityairport_id":  1, "destination_cityairport_id": 3, "route_distance": 450 },
-    {"route_id":  2, "origin_cityairport_id":  2, "destination_cityairport_id": 3, "route_distance": 475 }
+    {"route_id":  1, "origin_cityairport_id":  1, "destination_cityairport_id": 3, "route_distance": 500 },
+    {"route_id":  2, "origin_cityairport_id":  2, "destination_cityairport_id": 3, "route_distance": 525 },
+    {"route_id":  3, "origin_cityairport_id":  1, "destination_cityairport_id": 6, "route_distance": 5533 },
+    {"route_id":  4, "origin_cityairport_id":  2, "destination_cityairport_id": 8, "route_distance": 10865 }
   ],
   "flights": [
-    {"flight_id":  1, "flight_number": "DC123", "pilot_id":  1, "route_id": 1, "aircraft_id":  1, "schedule_id": 1, "flight_time":  2, "arrival_time":  "16:00"}
+    {"flight_id":  1, "flight_number": "DC123", "pilot_id":  1, "route_id": 1, "aircraft_id":  1, "schedule_id": 1, "arrival_time":  "05:00"}
   ]
 }

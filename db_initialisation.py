@@ -131,7 +131,6 @@ def init(DB_FILE):
                 pilot_id INTEGER,
                 route_id INTEGER,
                 schedule_id INTEGER,
-                flight_time INTEGER,
                 arrival_time TEXT,
                 FOREIGN KEY (aircraft_id) REFERENCES Aircraft(aircraft_id),
                 FOREIGN KEY (pilot_id) REFERENCES Pilot(pilot_id),
@@ -273,10 +272,10 @@ def init(DB_FILE):
 
             for flight in seed_data.get("flights", []):
                 insert_flight = '''
-                                                INSERT INTO Flight (flight_id, pilot_id, route_id, aircraft_id, schedule_id, flight_time)
-                                                VALUES (?, ?, ?, ?, ?, ?)
+                                                INSERT INTO Flight (flight_id, flight_number, pilot_id, route_id, aircraft_id, schedule_id, arrival_time)
+                                                VALUES (?, ?, ?, ?, ?, ?, ?)
                                             '''
-                values = (flight['flight_id'], flight['pilot_id'], flight['route_id'], flight['aircraft_id'], flight['schedule_id'], flight['flight_time'])
+                values = (flight['flight_id'], flight['flight_number'], flight['pilot_id'], flight['route_id'], flight['aircraft_id'], flight['schedule_id'], flight['arrival_time'])
 
                 logger.info("Inserting flight data")
                 logger.debug(f"Executing SQL: {insert_flight.strip()} | Values: {values}")
